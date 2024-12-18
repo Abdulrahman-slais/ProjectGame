@@ -1,0 +1,72 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 0;
+  color: #333;
+}
+
+/* Title Styling */
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Game Info Container */
+.game-info {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Restart Button */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Game Board */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.card.matched {
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: default;
+}
